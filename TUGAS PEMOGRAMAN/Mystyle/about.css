@@ -1,0 +1,268 @@
+
+
+
+/* Navbar*/
+label {
+    --col-orange: #d17842;
+    --col-darkGray: #52555a;
+    --col-gray: #aeaeae;
+  
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--col-dark);
+    border-radius: 30px;
+  }
+  .label {
+    padding: 8px 18px;
+    transition: all 200ms;
+    display: inline-block;
+  }
+  
+  .label input[type="radio"] {
+    display: none;
+  }
+  .label > svg {
+    transition: all 200ms;
+    fill: var(--col-gray);
+    width: 14px;
+  }
+  .label:hover:not(:has(input:checked)) > svg {
+    fill: #d17842;
+    opacity: 0.6;
+  }
+  .label::before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+    background: var(--col-orange);
+    transition: all 200ms;
+  }
+  .label > svg {
+    transition: 300ms;
+    fill: var(--col-darkGray);
+    margin-top: 0;
+  }
+  .label:has(input:checked) > svg {
+    fill: var(--col-orange);
+    scale: 1.2;
+    margin-top: -5px;
+  }
+  
+  .label:has(input:checked)::before {
+    width: 100%;
+    left: 0;
+    top: 25px;
+  }
+  
+
+  .navbar {
+    height: 60px;
+    font-family: 'Futura Bold', sans-serif; 
+}
+
+.navbar-light .navbar-brand {
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold; 
+    letter-spacing: 2px;
+    transition: color 0.3s ease; 
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #d17842; 
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #d17842; 
+}
+/*end navbar */
+
+.custom-navbar-cta i {
+  font-size: 25px; 
+  margin-right: 8px;
+  color: black; 
+}
+
+
+
+
+/* home start */
+
+/* Gaya CSS untuk menyesuaikan ukuran video */
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; 
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-us {
+  margin-top: 80px;
+}
+
+.about-us .left-image img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-us .right-content {
+  margin-left: 30px;
+}
+
+.about-us .right-content h4 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+.about-us .right-content span {
+  font-size: 14px;
+  color: #aaaaaa;
+  font-weight: 500;
+  display: block;
+  margin-top: 25px;
+}
+
+.about-us .right-content .quote {
+  margin-top: 25px;
+}
+
+.about-us .right-content .quote i {
+  float: left;
+  font-size: 32px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.about-us .right-content .quote p {
+  font-style: italic;
+  color: #2a2a2a;
+  font-weight: 500;
+}
+
+.about-us .right-content p {
+  font-size: 14px;
+  color: #aaaaaa;
+  font-weight: 500;
+  display: block;
+  margin-top: 25px;
+}
+
+.about-us .right-content ul {
+  border-top: 3px dotted #eee;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.about-us .right-content ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.about-us .right-content ul li a {
+  width: 44px;
+  height: 44px;
+  background-color: #2a2a2a;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+.about-us .right-content ul li a:hover {
+  background-color: #eee;
+  color: #2a2a2a;
+}
+
+/* Additional Styles for the New Section */
+.new-section {
+  margin-top: 80px;
+}
+
+.new-section .left-content {
+  margin-right: 30px;
+}
+
+.new-section h4 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+.new-section span {
+  font-size: 14px;
+  color: #aaaaaa;
+  font-weight: 500;
+  display: block;
+  margin-top: 25px;
+}
+
+.new-section p {
+  font-size: 14px;
+  color: #aaaaaa;
+  font-weight: 500;
+  display: block;
+  margin-top: 25px;
+}
+
+.new-section ul {
+  border-top: 3px dotted #eee;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.new-section ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.new-section ul li a {
+  width: 44px;
+  height: 44px;
+  background-color: #2a2a2a;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 50%;
+  transition: all .5s;
+}
+
+.new-section ul li a:hover {
+  background-color: #eee;
+  color: #2a2a2a;
+}
+
+.new-section .right-image img {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* home end */
+

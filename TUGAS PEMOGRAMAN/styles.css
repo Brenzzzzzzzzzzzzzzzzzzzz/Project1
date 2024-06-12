@@ -1,0 +1,27 @@
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-options {
+    display: flex;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+.cart-section {
+    margin-top: 20px;
+}
+
+.notification {
+    display: none;
+}
